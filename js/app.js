@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     pauseOnHover: false,
     pauseOnFocus: false,
     interval: 6000,
+    perPage: 2,
+    variableWidth: true,
+    breakpoints: {
+      640: {
+        perPage: 1,
+        arrows: false,
+      },
+    },
   }).mount();
 });
 

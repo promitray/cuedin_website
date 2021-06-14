@@ -54,7 +54,7 @@ a {
   max-width: 2500px;
   margin: 0;
   display: flex;
-  background-color:#CCCCFF;
+  background-color: #ccccff;
   align-items: center;
   justify-content: space-around;
 }
@@ -75,7 +75,7 @@ a {
   max-width: 180%;
   display: block;
   width: 350px;
-  flex:3;
+  flex: 3;
 }
 
 .nav-ul {
@@ -86,16 +86,15 @@ a {
   flex: 3;
 }
 
-.nav-ul .nav-li a{
-  color:#483D8B;
-  font-size:22px;
-  font-weight: bold 
+.nav-ul .nav-li a {
+  color: #483d8b;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .nav-li:hover {
-  color: orange! important;
+  color: orange !important;
 }
-
 
 .nav-li:hover {
   color: var(--primary-color);
@@ -210,7 +209,6 @@ a {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
 }
-
 
 .hero-title p {
   text-align: center;
@@ -490,7 +488,7 @@ h3.services-copy {
 
 .services-box {
   max-width: 600px;
-  padding: 3em;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -500,7 +498,7 @@ h3.services-copy {
   margin-bottom: 18px;
   background: var(--primary-color);
   border-radius: 5px;
-  color:black;
+  color: black;
   font-weight: bold;
   font-size: 30px;
   padding: 6px 0;
@@ -508,12 +506,12 @@ h3.services-copy {
 
 .services-question {
   cursor: pointer;
-  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
   color: lightgoldenrodyellow;
   font-size: 20px;
   padding: 1em;
-  height: 240px;  
+  height: 400px;
 }
 
 .box1 h3 {
@@ -537,11 +535,13 @@ h3.services-copy {
   padding: 0;
   box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  color: lightgoldenrodyellow;
+  font-size: 20px;
 }
 
 .services-answer--open {
   padding: 1em;
-  height: 240px;
+  height: 400px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -549,12 +549,21 @@ h3.services-copy {
     flex-direction: column;
     align-items: center;
   }
+  .services-box {
+    padding: 1em;
+  }
 }
 
 /*Services*/
 .our-clients {
-  max-width: 1200px;
-  margin: 4em auto 0;
+  /* max-width: 1200px; */
+  padding: 4em 0;
+  background: linear-gradient(
+      to right,
+      rgba(74, 169, 252, 0.7) 0%,
+      rgba(204, 204, 255, 0.9) 100%
+    ),
+    url("../images/handshake.jpg");
 }
 
 .our-clients h2 {
@@ -563,8 +572,7 @@ h3.services-copy {
   margin-bottom: 10px;
 }
 
-.our-clients h2,
-.our-clients p {
+.our-clients h2 {
   text-align: center;
 }
 
@@ -582,6 +590,11 @@ h3.services-copy {
   justify-content: center;
 }
 
+.splide {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .splide__slide {
   display: flex;
   justify-content: center;
@@ -597,6 +610,34 @@ h3.services-copy {
   padding: 0 1em;
 }
 
+.splide__list li {
+  max-width: 400px;
+  width: 100% !important;
+  border-radius: 10px;
+  margin: 2em;
+  box-shadow: 1px 1px 18px 0px rgba(50, 50, 50, 0.31);
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+}
+
+@media screen and (max-width: 468px) {
+  .splide__list li {
+    max-width: 300px;
+    height: 500px !important;
+    margin: 0 1em;
+  }
+  .splide {
+    padding: 16px !important;
+  }
+}
+
+.splide__list li .company-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .splide img {
   display: block;
   margin: 20px 0;
