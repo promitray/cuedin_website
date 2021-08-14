@@ -1,19 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   new Splide(".splide", {
     type: "loop",
-    autoplay: true,
+    // autoplay: true,
     height: 400,
     pauseOnHover: false,
     pauseOnFocus: false,
     interval: 6000,
-    perPage: 2,
-    variableWidth: true,
-    breakpoints: {
-      640: {
-        perPage: 1,
-        arrows: false,
-      },
-    },
   }).mount();
 });
 

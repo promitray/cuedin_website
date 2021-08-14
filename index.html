@@ -10,7 +10,7 @@
     />
     <meta name="keywords" content="Cuedin, market research chennai, cued in" />
     <link rel="shortcut icon" href="./images/cuedinLogosmall.png"
-    type="image/png>
+    type="image/png">
     <title>
       Cuedin | Your Hub for Actionable, Affordable and Authentic Market Research
     </title>
@@ -20,6 +20,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Fontawesome -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -29,37 +39,40 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-default.min.css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
+
       <!--Header-->
 
-      <header class="header">
-        <nav class="nav">
+      <header class="header fixed w-full bg-white">
+        <nav class="nav lg:px-12 px-10 lg:py-0 py-3">
           <div class="navbrand">
             <a href="/">
-              <img src="./images/cuedinLogo.png" alt="Cuedin" />
+              <!-- <img class="w-1/5 h-auto hidden" src="./images/cuedinLogosmall.png" alt="Cuedin" /> -->
+              <img class="lg:w-3/5 w-1/2 h-auto lg:block" src="./images/cuedinLogo_bg.png" alt="Cuedin" />
             </a>
           </div>
-          <ul class="nav-ul">
+          <ul class="nav-ul ml-96">
             <li class="nav-li">
-              <a href="#about-us" class="nav-link">Who are we?</a>
+              <a id="about" class="nav-link text-black font-medium text-base cursor-pointer">Who we are</a>
             </li>
             <li class="nav-li">
-              <a href="#services" class="nav-link">What do we do?</a>
+              <a id="service" class="nav-link text-black font-medium text-base cursor-pointer">What we do</a>
             </li>
             <li class="nav-li">
-              <a href="#clients" class="nav-link">Who do we work with?</a>
+              <a id="client" class="nav-link text-black font-medium text-base cursor-pointer">Who we work with</a>
             </li>
             <li class="nav-li">
-              <a href="#contact" class="nav-link">Get in touch!</a>
+              <a id="touch" class="nav-link text-white font-medium text-base cursor-pointer p-3 bg-purple rounded-2xl cta-hover">Get in touch</a>
             </li>
           </ul>
           <div class="menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars text-black z-50"></i>
           </div>
         </nav>
       </header>
@@ -68,160 +81,275 @@
 
       <!--main-->
 
-      <main class="container">
-        <section class="hero-section">
-          <div
-            class="hero-title"
-            title="photo by: Lukas https://www.pexels.com/@goumbik"
-          >
-            <h1>Hi! We are Cued In Research</h1>
-	    <br></br>
-	    <p>
-              your one stop solution for new product development.
-	    <p>
-	    <p>
-	    Reach us for <strong>Actionable Affordable Authentic</strong> Market Research.	      
-            </p>
-          </div>
-        </section>
-       
-        <section class="about-us" id="about-us">
-            <div class="about-desc-wrapper">
-            <div class="about-bg-img"></div>
-            <div class="about-text">
-	      <h1> Our Story </h1>
-	      <br></br>
-	      <h3> 
-	      <strong><em>"The customer’s perception is your reality"</em></strong> - Kate Zabriskie
-	      </h3>
-	      <br></br>
-	      <p>
-	        Cued In Research was created for <strong><em>you</em></strong>; for people who have a
-                real need for understanding customer behavior within time
-                and cost constraints. Our experiences have taught us that data often has a better idea, we are
-		here to help you integrate innovation with the voice of the customer.
-              </p>
-              <p class="about-p-first-child">
-                Our services are specifically tailored to the needs of clients with intense research
-                requirements and interest but small research budgets.
-              </p>
-              <p>
-                We felt these players' budgets were often by passed by the big research suppliers, though their needs were
-                substantial.
-              </p>
-              <p>
-                We understand and value authentic consumer insights.
-              </p>
-              <h3 class="about-copy">
-		      We are <strong>CUED IN</strong> to your <strong>MARKET RESEARCH NEEDS</strong>.
-              </h3>
-              <h3 class="about-copy2" id="services">
-                We understand you, we are here for you!
-              </h3>
+      <main class="w-full">
+
+        <!-- Landing Page -->
+
+        <section>
+          <div class="w-full lg:h-auto lg:px-32 px-10 lg:py-24 py-6 flex lg:flex-row flex-col">
+            <div class="lg:w-1/2 w-full mt-content font-raleway h-96">
+              <div>
+                <h1 class="lg:text-4xl text-xl font-bold leading-none">Your one stop solution for <br class="hidden lg:block">new product development</h1>
+                <p class="lg:text-2xl text-lg font-semibold lg:my-8 my-6">Reach us for Market Research that is,</p>
+                <div class="flex flex-row items-center">
+                  <img class="lg:w-12 w-10 h-auto" src="./images/actionicon.svg" alt="">
+                  <p class="ml-4 lg:text-3xl text-xl font-bold text-purple">Actionable</p>
+                </div>
+                <div class="flex flex-row items-center lg:mt-8 mt-6">
+                  <img class="lg:w-12 w-10 h-auto" src="./images/affordicon.svg" alt="">
+                  <p class="ml-4 lg:text-3xl text-xl font-bold text-purple">Affordable</p>
+                </div>
+                <div class="flex flex-row items-center lg:mt-8 mt-6">
+                  <img class="lg:w-12 w-10 h-auto" src="./images/authenticicon.svg" alt="">
+                  <p class="ml-4 lg:text-3xl text-xl font-bold text-purple">Authentic</p>
+                </div>
+              </div>
+            </div>
+            <div class="lg:w-1/2 w-full flex mt-image items-center flex-col">
+              <img class='w-auto h-96 object-contain' src="./images/equation.png" alt="">
             </div>
           </div>
         </section>
 
-        <section class="our-services">
-	  <br></br>
-          <h2>Our Offerings</h2>
+        <!-- About us page -->
+        
+        <section id="about-us" class="about-us pt-2">
+          <h2 class="text-purple font-semibold mb-2">About Us</h2>
+          <div class="about-desc-wrapper px-5">
+            <div class="about-bg-img"></div>
+            <div class="about-text">
+              <h3>
+                "The customer’s perception is your reality" <br>- Kate Zabriskie
+              </h3>
+              <p class="about-p-first-child">
+                We are here to help you hear the voice of the consumer - their Needs, Problems, Opinions - so that you can create innovative products and services which resonate with them
+              </p>
+              <p class="about-p-first-child">
+                Cued In Research was created for you; for people who have a real need for understanding customer behavior within time and cost constraints. 
+                Market research should not follow a 'one size fits all' approach, this versatility is our founding principle at Cued In Research. We focus on providing customized solutions tailored to specific marketing requirements. We also provide ready made bite sized packaged solutions for you
+              </p>
+            </div>
+          </div>
+          <div class="flex lg:flex-row flex-col justify-between lg:px-32 px-5 lg:py-8 py-8">
+            <div class="flex flex-row items-center">
+              <img class='lg:w-20 w-12 h-auto' src="./images/search-cirlc.png" alt="">
+              <p class="ml-4 text-xl font-semibold text-purple">We are cued in to your market <br>research needs</p>
+            </div>
+            <div class="flex flex-row items-center mt-6 lg:mt-0">
+              <img class='lg:w-20 w-12 h-auto' src="./images/usertick.png" alt="">
+              <p class="ml-4 text-xl font-semibold text-purple">We understand you!</p>
+            </div>
+            <div class="flex flex-row items-center mt-6 lg:mt-0">
+              <img class='lg:w-20 w-12 h-auto' src="./images/calender.png" alt="">
+              <p class="ml-4 text-xl font-semibold text-purple">We are always there <br>for you!</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Offers page -->
+
+        <section id="services" class="our-services px-5">
+          <h2 class="text-purple font-semibold" >Our Offers</h2>
           <div class="services-head">
-            <h3>Market research should not follow a 'one size fits all' approach, this versatility is our founding principle at Cued In Research.
-		We focus on providing customized solutions tailored to specific marketing requirements. We also provide ready made bite sized packaged solutions for you.
-		<br></br>
-		Our present services can be places in three major branches: data cues, product cues and communication cues. Click on the question headers to see
-		how we deal with these research problems.
-		<br></br>
-                You have more questions? Reach out to see if we have a match!
-            </h3>
+            <h3 class="lg:px-32 px-5">Click on the question headers to see how we deal with these research problems.
+              You have more questions? Reach out to see if we have a match</h3>
           </div>
           <div class="services-box-wrapper">
             <div class="services-box box1">
-              <div class="services-question">
-                <h3>Data Cues</h3>
-                <p>
-                  Data always has the better idea! Need to make sense of your data and use it to drive your
-                  business? Qualitative, quantitative or both? We love the sound of that, reach out! 
+              <div class="services-question flex flex-col items-center shadow-lg boxes">
+                <div class="flex flex-row items-center">
+                  <i class="p-2 rounded-full bg-purple400 text-white fas fa-database mr-2"></i>
+                  <h3 class="text-xl font-medium">Data Cues</h3>
+                </div>
+                <p class="text-center w-4/5 text-base question">
+                  Data always has the better idea! Need to make sense of your data and use it to drive your business? Qualitative, quantitative or both? We love the sound of that, reach out!
                 </p>
-              </div>
-              <div class="services-answer">
-                <h3>Data Solutions</h3>
-                <p>
+                <div class="flex flex-row items-center my-5">
+                  <i class="p-2 rounded-full bg-purple400 text-white fas fa-check mr-2"></i>
+                  <h3 class="text-xl font-medium">Data Solutions</h3>
+                </div>
+                <p class="text-center w-4/5 text-base answer">
                   What patterns insights can we draw from available data In real
                   time Or on a periodic basis
                 </p>
               </div>
             </div>
             <div class="services-box box2">
-              <div class="services-question">
-                <h3>Product Cues</h3>
-                <p>
-                  Do you have a product idea? Have you developed a product? Let us find
-                  out together if it has potential.
+              <div class="services-question flex flex-col shadow-lg boxes">
+                <div class="flex flex-row items-center self-center">
+                  <i class="p-2 rounded-full bg-purple500 text-white fas fa-database mr-2"></i>
+                  <h3 class="text-xl font-medium">Product Cues</h3>
+                </div>
+                <p class="text-center w-4/5 text-base question self-center">
+                  Do you have a product idea? Have you developed a product? Let us find out together if it has potential.
                 </p>
-              </div>
-              <div class="services-answer">
-                <h3>Product Solutions</h3>
-                <p>
-                  Product tests - blind or branded in a monadic or sequential
-                  <br />
-                  monadic design <br />
-                  Concept tests <br />
-                  Developing positioning ideas <br />
-                  Identifying need gaps
-                </p>
+                <div class="flex flex-row items-center my-5 self-center">
+                  <i class="p-2 rounded-full bg-purple500 text-white fas fa-check mr-2"></i>
+                  <h3 class="text-xl font-medium">Product Solutions</h3>
+                </div>
+                <div class="flex self-center flex-col w-11/12 answer">
+                  <div class="flex flex-row">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base'>Product tests - iblind or branded n a monadic or sequential</p>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base'>monadic design</p>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base'>Concept tests</p>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base'>Developing positioning ideas</p>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base'>Identifying need gaps</p>
+                  </div> 
+                </div>
               </div>
             </div>
             <div class="services-box box3">
-              <div class="services-question">
-                <h3>Communication Cues</h3>
-                <p>
+              <div class="services-question flex flex-col items-center shadow-lg boxes">
+                <div class="flex flex-row items-center px-10 lg:px-0">
+                  <i class="p-2 rounded-full bg-purple600 text-white fas fa-database mr-2"></i>
+                  <h3 class="text-xl font-medium">Communication Cues</h3>
+                </div>
+                <p class="text-center w-4/5 text-base3 question">
                   You have developed communication. Is it working? Do you need
                   to improve it ? Modify it? How much should you spend on it?
                 </p>
-              </div>
-              <div class="services-answer">
-                <h3>Communication Solutions</h3>
-                <p>
-                  Response to our communication idea<br />
-                  Response to our TVC/ viral ad <br />
-                  Assessing impact of communication on Brand health
-                </p>
+                <div class="flex flex-row items-center my-5 px-10 lg:px-0">
+                  <i class="p-2 rounded-full bg-purple600 text-white fas fa-check mr-2"></i>
+                  <h3 class="text-xl font-medium">Communication Solutions</h3>
+                </div>
+                <div class="flex self-center flex-col w-11/12 answer">
+                  <div class="flex flex-row">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base3'>Response to our communication idea</p>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base3'>Response to our TVC/ viral ad</p>
+                  </div>
+                  <div class="flex flex-row items-center">
+                    <i class="fas fa-check text-black mr-2"></i>
+                    <p class='text-base3'>Assessing impact of communication on Brand health</p>
+                  </div>
               </div>
             </div>
           </div>
+        </div>
         </section>
 
-        <section class="our-clients" id="clients">
-          <h2>Our Clients</h2>
-          <div class="splide">
+        <!-- Our Clients page -->
+
+        <section id="clients" class="our-clients bg-gray py-8 px-3 lg:px-0 rounded-md" id="clients">
+          <h2 class='text-purple font-semibold'>Our Clients and their Verdict</h2>
+          <div class="my-10 px-20 grid grid-cols-5 place-items-center gap-2 hidden lg:flex lg:justify-between">
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/cavinkare.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/ccoffee.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/lotteIndia.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/elite_good.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/ds_group.png" alt="">
+            </div>
+          </div>
+          <div class="mt-10 mb-8 px-20 grid grid-cols-4 place-items-center gap-2 hidden lg:flex lg:justify-between">
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/gokulsantol.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/dollar.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/ttk.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/tafe.png" alt="">
+            </div>
+          </div>
+          <div class="mt-10 mb-8 px-5 grid grid-cols-3 place-items-center gap-2 lg:hidden">
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/cavinkare.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/ccoffee.png" alt="">
+            </div>
+            <div>
+              <img class="w-1/2 h-auto mx-auto" src="./images/lotteIndia.png" alt="">
+            </div>
+            <div class="mt-5">
+              <img class="w-1/2 h-auto mx-auto" src="./images/elite_good.png" alt="">
+            </div>
+            <div class="mt-5">
+              <img class="w-1/2 h-auto mx-auto" src="./images/ds_group.png" alt="">
+            </div>
+            <div class="mt-5">
+              <img class="w-1/2 h-auto mx-auto" src="./images/gokulsantol.png" alt="">
+            </div>
+            <div class="mt-5">
+              <img class="w-1/2 h-auto mx-auto" src="./images/dollar.png" alt="">
+            </div>
+            <div class="mt-5">
+              <img class="w-1/2 h-auto mx-auto" src="./images/ttk.png" alt="">
+            </div>
+            <div class="mt-5">
+              <img class="w-1/2 h-auto mx-auto" src="./images/tafe.png" alt="">
+            </div>
+          </div>
+          <div class="splide lg:-mt-20 -mt-5">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide lotte">
                   <div class="company-logo">
-                    <img src="./images/lotte.svg" alt="" />
+                    <img src="./images/lotteIndia.png" alt="" />
                   </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
+                  <div class="company-testimonial lg:text-base text-xs">
+                    "I have been associated with Dipa and her firm, Cuedin professionally, since the last five years - although 
+                    we’ve known each other for over a decade! Dipa, with her 25+ years of MR experience, is the perfect partner 
+                    for handling your research requirements. Her professionalism, research methodology and analytical abilities 
+                    are outstanding. She has the uncanny knack of asking the right questions to get to the heart of your 
+                    business problem."
                   </div>
+                  <p class="mt-2 text-red-600">- Venkatesh Parthasarathy<br>Vice President Marketing Lotte India Corporation Limited</p>
                 </li>
                 <li class="splide__slide cavincare">
                   <div class="company-logo">
                     <img src="./images/cavinkare.png" alt="" />
                   </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
+                  <div class="company-testimonial lg:text-base text-xs">
+                    "Collabarated with Cuedin Research for almost 3 years now and lot more years to go. 
+                    The work done by them are meticulous and sincere. Insight and suggestion recommended by them very useful. 
+                    Cuedin has been a go to team for many of our NPD New Product Development Studies & have provided very 
+                    reliable results for us to use.” 
                   </div>
+                  <p class="mt-2 text-blue-800">- Karthiban<br>Market Research Officer Cavinkare Pvt Ltd</p>
                 </li>
                 <li class="splide__slide elite">
+                  <div class="company-logo">
+                    <img src="./images/dollar.png" alt="" />
+                  </div>
+                  <div class="company-testimonial lg:text-base text-xs">
+                    "Insights from “Cued in Research” on key customer behavior data and our brand positioning in category context 
+                    aided us to define our growth strategy for the future.
+                    Category level understanding amongst the competition helped us in creating the right approach for our 
+                    brand re-alignment. Cued in Research is thorough in their findings and their effort has helped as a 
+                    foundation to develop on the change.""
+                  </div>
+                  <p class="mt-2 text-black">- Krishan Kumar Gupta <br>Director Dollar Industries Ltd.</p>
+                </li>
+                <!-- <li class="splide__slide elite">
                   <div class="company-logo">
                     <img src="./images/elite.png" alt="" />
                   </div>
@@ -232,8 +360,8 @@
                     sequi illo, quas modi unde voluptate totam perspiciatis.
                     Quos?
                   </div>
-                </li>
-                <li class="splide__slide elite">
+                </li> -->
+                <!-- <li class="splide__slide elite">
                   <div class="company-logo">
                     <img src="./images/gokulsantol.jpg" alt="" />
                   </div>
@@ -244,8 +372,8 @@
                     sequi illo, quas modi unde voluptate totam perspiciatis.
                     Quos?
                   </div>
-                </li>
-                <li class="splide__slide elite">
+                </li> -->
+                <!-- <li class="splide__slide elite">
                   <div class="company-logo">
                     <img src="./images/ttk.jpg" alt="" />
                   </div>
@@ -256,8 +384,8 @@
                     sequi illo, quas modi unde voluptate totam perspiciatis.
                     Quos?
                   </div>
-                </li>
-                <li class="splide__slide elite">
+                </li> -->
+                <!-- <li class="splide__slide elite">
                   <div class="company-logo">
                     <img src="./images/tafe.png" alt="" />
                   </div>
@@ -268,8 +396,8 @@
                     sequi illo, quas modi unde voluptate totam perspiciatis.
                     Quos?
                   </div>
-                </li>
-                <li class="splide__slide elite">
+                </li> -->
+                <!-- <li class="splide__slide elite">
                   <div class="company-logo">
                     <img src="./images/ccoffee.png" alt="" />
                   </div>
@@ -280,20 +408,8 @@
                     sequi illo, quas modi unde voluptate totam perspiciatis.
                     Quos?
                   </div>
-                </li>
-                <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/dollar.png" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li>
-                <li class="splide__slide elite">
+                </li> -->
+                <!-- <li class="splide__slide elite">
                   <div class="company-logo">
                     <img src="./images/dsgroup.png" alt="" />
                   </div>
@@ -304,65 +420,81 @@
                     sequi illo, quas modi unde voluptate totam perspiciatis.
                     Quos?
                   </div>
-                </li>
+                </li> -->
               </ul>
             </div>
-            
+            <div
+              class="splide__progress"
+              style="max-width: 300px; margin: 0 auto"
+            >
+              <div class="splide__progress__bar"></div>
+            </div>
           </div>
         </section>
-        <!-- <section class="testimonials">
-          <h2>What do they say about us?</h2>
-        </section> -->
-        <section class="contact" id="contact">
-          <h2>Contact Us</h2>
+
+        <!-- Contact Us -->
+
+        <section id="contact" class="contact px-5">
+          <h2 class="text-purple font-semibold">Contact Us</h2>
           <p>
             Type in your marketing question and we will provide a rudimentary
             market research design for you to fine tune and action.
           </p>
-          <div class="contact-number">
-            <p><i class="fas fa-phone-alt"></i>+91-9840410696</p>
-            <p><i class="fas fa-envelope"></i> dipanyita@cuedin.co.in</p>
+          <div class="w-full">
+            <div class="w-full">
+              <div class="contact-number flex flex-row">
+                <p><i class="fas fa-phone-alt"></i>+91-9840410696</p>
+                <p><i class="fas fa-envelope"></i> dipanyita@cuedin.co.in</p>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="contact-form mx-auto">
+                <form action="https://formspree.io/f/mnqldbaz" method="post">
+                  <div class="formgroup">
+                    <!-- <label for="name">Name: </label> -->
+                    <input
+                      type="text"
+                      name="name"
+                      id="form-name"
+                      placeholder="Enter your Name"
+                    />
+                  </div>
+                  <div class="formgroup">
+                    <!-- <label for="email">Email: </label> -->
+                    <input
+                      type="email"
+                      name="email"
+                      id="form-email"
+                      placeholder="Enter your Email"
+                    />
+                  </div>
+                  <div class="formgroup">
+                    <!-- <label for="phone">Phone Number:</label> -->
+                    <input
+                      type="text"
+                      name="phone"
+                      id="form-phone"
+                      placeholder="Enter your Phone Number"
+                    />
+                  </div>
+                  <div class="formgroup">
+                    <textarea id="form-problem" type='text' name="problem" placeholder="Put your Problem" class="w-full px-3 py-2 border-color-gray rounded-lg focus:outline-none" rows="3"></textarea>
+                  </div>
+                  <input class='mx-auto' type="submit" value="Send" />
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="contact-form">
-            <form action="https://formspree.io/f/mnqldbaz" method="post">
-              <div class="formgroup">
-                <label for="name">Name: </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="form-name"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div class="formgroup">
-                <label for="email">Email: </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="form-email"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div class="formgroup">
-                <label for="phone">Phone Number:</label>
-                <input
-                  type="text"
-                  name="phone"
-                  id="form-phone"
-                  placeholder="Enter your Phone Number"
-                />
-              </div>
-              <input type="submit" value="Send" />
-            </form>
-          </div>
-          <h3>What are you waiting for?</h3>
+          <h3 class="mb-5">What are you waiting for?</h3>
         </section>
+
       </main>
       <!--main-->
-      <footer>
-        <p>CuedIn Research @ 2021</p>
+      <footer class="h-12">
+        <!-- <p>CuedIn Research</p> -->
       </footer>
     </div>
     <script src="./js/app.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
