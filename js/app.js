@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   new Splide(".splide", {
     type: "loop",
     // autoplay: true,
-    height: 400,
+    height: 500,
     pauseOnHover: false,
     pauseOnFocus: false,
     interval: 6000,
