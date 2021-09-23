@@ -467,7 +467,7 @@ h3.services-copy {
   max-width: 500px;
   padding: 1em;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-between;
 }
 .services-box h3 {
@@ -790,6 +790,7 @@ footer {
   z-index: -1;
 }
 
+/*
 .question{
   height: 160px;
 }
@@ -797,6 +798,7 @@ footer {
 .answer{
   height: 160px;
 }
+*/
 
 .bottom-20{
   bottom: 70px;
@@ -842,7 +844,7 @@ footer {
     margin-left: 16rem;
   }
 }
-
+/*
 @media screen and (max-width: 420px) {
   .question{
     height: 150px;
@@ -866,3 +868,4 @@ footer {
     height: 180px;
   }
 }
+*/
