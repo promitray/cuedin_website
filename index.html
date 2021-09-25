@@ -37,20 +37,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-sea-green.min.css"
-    />
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
 
       <!--Header-->
 
-      <header class="header fixed w-full bg-white">
-        <nav class="nav lg:px-12 px-10 lg:py-0 py-3">
+      <header class="header sticky w-full bg-white">
+        <nav class="nav px-10 lg:py-0 py-3">
           <div class="navbrand">
             <a href="/">
               <!-- <img class="w-1/5 h-auto hidden" src="./images/cuedinLogosmall.png" alt="Cuedin" /> -->
@@ -87,7 +86,7 @@
 
         <section>
           <div class="w-full lg:h-auto lg:px-32 px-10 lg:py-24 py-6 flex lg:flex-row flex-col">
-            <div class="lg:w-1/2 w-full mt-content font-raleway h-96">
+            <div class="lg:w-1/2 w-full font-raleway h-96">
               <div>
                 <h1 class="lg:text-4xl text-xl font-bold leading-none">Your one stop solution for <br class="hidden lg:block">consumer insights that are </h1>
                 <p class="lg:text-2xl text-lg font-semibold lg:my-8 my-6"> </p>
@@ -129,34 +128,34 @@
                 As you develop new product ideas, new products, new marketing strategy, we help you minimise risks and take informed decisions by Cueing In to the needs of your consumers and stakeholders 
               </p>
               <p class="about-p-first-child">
-                Cued In Research specialises in market research for New Product Development. We help you stay connected with consumers at every step of your product development journey 
-                We know the greatest risk in New Product Development is in creating and growing your customers and markets. We leverage insights about what people want, experience, believe so that you can create products,services,marketing strategy that resonates          
+                Cued In Research specialises in market research for New Product Development. We help you stay connected with consumers at every step of your product development journey. 
+                We know the greatest risk in New Product Development is in creating and growing your customers and markets. We leverage insights about what people want, experience, believe, so that you can create products, services, marketing strategy that resonates          
               </p>
             </div>
           </div>
           <div class="flex lg:flex-row flex-col justify-between lg:px-32 px-5 lg:py-8 py-8">
             <div class="flex flex-row items-center">
               <img class='lg:w-20 w-12 h-auto' src="./images/search-cirlc.png" alt="">
-              <p class="ml-4 text-xl font-semibold text-purple">We are cued in to your market <br>research requirements </p>
+              <p class="ml-4 text-xl font-semibold text-purple">We are Cued In to your Market <br>Research requirements </p>
             </div>
             <div class="flex flex-row items-center mt-6 lg:mt-0">
               <img class='lg:w-20 w-12 h-auto' src="./images/usertick.png" alt="">
-              <p class="ml-4 text-xl font-semibold text-purple">We help you Innovate and grow </p>
+              <p class="ml-4 text-xl font-semibold text-purple">We help you Innovate and Grow </p>
             </div>
             <div class="flex flex-row items-center mt-6 lg:mt-0">
               <img class='lg:w-20 w-12 h-auto' src="./images/calender.png" alt="">
-              <p class="ml-4 text-xl font-semibold text-purple">We are always there <br>for you</p>
+              <p class="ml-4 text-xl font-semibold text-purple">We are Always There <br>for you</p>
             </div>
           </div>
         </section>
 
         <!-- Our Offers page -->
 
-        <section id="services" class="our-services px-5">
+        <section id="services" class="our-services">
           <h2 class="text-purple font-semibold" >Our Offers</h2>
           <div class="services-head">
             <h3 class="lg:px-32 px-5">Click on the question headers to see how we deal with these research problems.
-              You have more questions? Reach out to see if we have a match</h3>
+              You have more questions? Reach out to see if we have a solution</h3>
           </div>
           <div class="services-box-wrapper">
             <div class="services-box box1">
@@ -190,26 +189,34 @@
                   <i class="p-2 rounded-full bg-purple500 text-white fas fa-check mr-2"></i>
                   <h3 class="text-xl font-medium">Product Solutions</h3>
                 </div>
-                <p class="text-center w-4/5 text-base answer">
-                  We will help you make a more informed choice. Are you ready to launch? Do you need further improvement? What improvements do you need?
+                <p class="text-left w-4/5 text-base answer">
+                  We will help you make a more informed choice. 
+                  <br />
+                  * Are you ready to launch?
+                  <br />
+                  * Do you need further improvement?
+                  <br />
+                  * What improvements do you need?
+                  <br />
+                  * How does your product compare with the best in class?
                 </p>
               </div>
             </div>
             <div class="services-box box3">
               <div class="services-question flex flex-col items-center shadow-lg boxes">
-                <div class="flex flex-row items-center my-5 px-10 lg:px-0">
+                <div class="flex sm:flex-row flex-col items-center my-5 lg:px-0">
                   <i class="p-2 rounded-full bg-purple600 text-white fas fa-database mr-2"></i>
                   <h3 class="text-xl font-medium">Communication Cues</h3>
                 </div>
                 <p class="text-center w-4/5 text-base3 question">
-                  You have developed a new communication idea, a new communication or packaging or spent heavily on a campaign. You want to take an informed decision on the next steps
+                  You have developed a new communication idea, a new communication or packaging, or spent heavily on a campaign. You want to take an informed decision on the next steps.
                 </p>
-                <div class="flex flex-row items-center my-5 px-10 lg:px-0">
+                <div class="flex sm:flex-row flex-col items-center my-5 lg:px-0">
                   <i class="p-2 rounded-full bg-purple600 text-white fas fa-check mr-2"></i>
                   <h3 class="text-xl font-medium">Communication Solutions</h3>
                 </div>
                 <p class="text-center w-4/5 text-base answer">
-                  We can help you find out communication, ideas, communication, packaging which resonate best with the consumer. We can also tell you the impact of your campaign
+                  We can help you find out communication ideas, communication, packaging which resonate best with the consumer. We can also tell you the impact of your campaign.
                 </p>
             </div>
           </div>
@@ -280,129 +287,53 @@
               <img class="w-1/2 h-auto mx-auto" src="./images/tafe.png" alt="">
             </div>
           </div>
-          <div class="splide lg:-mt-20 -mt-5">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide lotte">
-                  <div class="company-logo">
-                    <img src="./images/lotteIndia.png" alt="" />
-                  </div>
-                  <div class="company-testimonial lg:text-base text-xs">
-                   "I have been associated with Dipa professionally  for more than a decade.  
-                    <br>
-                    Dipa, with her 25+ years of MR experience, is the perfect partner for handling your research requirements.
-                    Her professionalism, research methodology and analytical abilities are outstanding.
-                    She has the uncanny knack of asking the right questions to get to the heart of your business problem.
-                    
-                    I would rate her most definitely, amongst the Top 3 researchers I have worked with, in my 20+ year career.
-                    <br>
-                   Dipa is ably supported with field resources who can turnaround researches within set timelines.
-                   In short, if you are looking for a research partner, Dipa is your go-to person.
-                   "
-                  </div>
-                  <p class="mt-2 text-red-600">- Venkatesh Parthasarathy<br>Vice President - Marketing <br> Lotte India Corporation Limited</p>
-                </li>
-                <li class="splide__slide cavincare">
-                  <div class="company-logo">
-                    <img src="./images/cavinkare.png" alt="" />
-                  </div>
-                  <div class="company-testimonial lg:text-base text-xs">
-                    "I have been collaborating with Cuedin Research for almost 3 years now and will continue to do so for many more years to come. The work done by them is meticulous and sincere. Insight and suggestions recommended by them have been very useful.
-                    <br>
-                    We have used them for many New Product Development Studies &amp; their findings have worked very well for us."
-                  </div>
-                  <p class="mt-2 text-blue-800">- Karthiban<br>Market Research Officer Cavinkare Pvt Ltd</p>
-                </li>
-                <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/dollar.png" alt="" />
-                  </div>
-                  <div class="company-testimonial lg:text-base text-xs">
-                    "Insights from “Cued in Research” on key customer behavior data and our brand positioning in a category context aided us to define our growth strategy for the future.
-                    <br>
-                    Category level understanding amongst the competition helped us in creating the right approach for our brand re-alignment. “Cued in Research” is thorough in their findings and their efforts have helped us develop and change our brand position and log"
-                  </div>
-                  <p class="mt-2 text-black">- Krishan Kumar Gupta <br>Director Dollar Industries Ltd.</p>
-                </li>
-                <!-- <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/elite.png" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li> -->
-                <!-- <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/gokulsantol.jpg" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li> -->
-                <!-- <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/ttk.jpg" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li> -->
-                <!-- <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/tafe.png" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li> -->
-                <!-- <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/ccoffee.png" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li> -->
-                <!-- <li class="splide__slide elite">
-                  <div class="company-logo">
-                    <img src="./images/dsgroup.png" alt="" />
-                  </div>
-                  <div class="company-testimonial">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat error minima dolore impedit. Minima, obcaecati.
-                    Explicabo neque, temporibus architecto quos dignissimos
-                    sequi illo, quas modi unde voluptate totam perspiciatis.
-                    Quos?
-                  </div>
-                </li> -->
-              </ul>
+          <div class="testimonials-carousel">
+            <div class="carousel-cell" style="min-height: 532px">
+              <li class="splide__slide lotte">
+                <div class="company-logo">
+                  <img src="./images/lotteIndia.png" alt="" />
+                </div>
+                <div class="company-testimonial lg:text-base text-xs">
+                 "I have been associated with Dipa professionally  for more than a decade, and with her firm, Cued In Research since she started in 2018.  
+                  <br>
+                  Dipa, with her 25+ years of MR experience, is the perfect partner for handling your research requirements.
+                  Her professionalism, research methodology and analytical abilities are outstanding.
+                  She has the uncanny knack of asking the right questions to get to the heart of your business problem.
+                  
+                  I would rate her most definitely, amongst the Top 3 researchers I have worked with, in my 20+ year career.
+                  <br>
+                 Dipa is ably supported with field resources who can turnaround researches within set timelines.
+                 In short, if you are looking for a research partner, Dipa is your go-to person.
+                 "
+                </div>
+                <p class="mt-2 text-red-600">- Venkatesh Parthasarathy<br>Vice President - Marketing <br> Lotte India Corporation Limited</p>
+              </li>
             </div>
-            <div
-              class="splide__progress"
-              style="max-width: 300px; margin: 0 auto"
-            >
-              <div class="splide__progress__bar"></div>
+            <div class="carousel-cell">
+              <li class="splide__slide cavincare">
+                <div class="company-logo">
+                  <img src="./images/cavinkare.png" alt="" />
+                </div>
+                <div class="company-testimonial lg:text-base text-xs">
+                  "I have been collaborating with Cuedin Research for almost 3 years now and will continue to do so for many more years to come. The work done by them is meticulous and sincere. Insight and suggestions recommended by them have been very useful.
+                  <br>
+                  We have used them for many New Product Development Studies &amp; their findings have worked very well for us."
+                </div>
+                <p class="mt-2 text-blue-800">- Karthiban<br>Market Research Officer Cavinkare Pvt Ltd</p>
+              </li>
+            </div>
+            <div class="carousel-cell">
+              <li class="splide__slide elite">
+                <div class="company-logo">
+                  <img src="./images/dollar.png" alt="" />
+                </div>
+                <div class="company-testimonial lg:text-base text-xs">
+                  "Insights from “Cued in Research” on key customer behavior data and our brand positioning in a category context aided us to define our growth strategy for the future.
+                  <br>
+                  Category level understanding amongst the competition helped us in creating the right approach for our brand re-alignment. “Cued in Research” is thorough in their findings and their efforts have helped us develop and change our brand position and logo"
+                </div>
+                <p class="mt-2 text-black">- Krishan Kumar Gupta <br>Director Dollar Industries Ltd.</p>
+              </li>
             </div>
           </div>
         </section>
