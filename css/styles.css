@@ -829,8 +829,10 @@ footer {
 
 .carousel-cell {
   width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
